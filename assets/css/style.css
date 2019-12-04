@@ -1,14 +1,64 @@
-* {
-    box-sizing: border-box;
-}
-
-.container {
-    text-align: center;
-    margin: 50px;
-}
-
-#footer {
-    position: absolute;
-    top: 93%;
-    left: 37%;
-}
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("https://testdrive-archive.azurewebsites.net/Performance/Chalkboard/Images/EmptyChalkboard.svg");
+            background-size: cover;
+            color: #ffffff;
+            background-color: #000;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        h5 {
+            margin: 30px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 35px;
+        }
+        
+        h1 {
+            margin-bottom: 60px;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+            font-family: 'Righteous', cursive;
+        }
+        
+        #time {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 10px;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 30px;
+        }
+        
+        .col-6 {
+            border: 1px solid black;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 25px;
+        }
+        
+        .col-6:hover {
+            cursor: pointer;
+            background-color: #FF9F8C;
+        }
+        
+        #save:hover {
+            background-color: #FFDEEB;
+            cursor: pointer;
+        }
+        
+        #save {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 10px;
+        }
+        
+        #footer {
+            font-family: 'Indie Flower', cursive;
+            font-size: 20px;
+        }
