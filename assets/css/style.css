@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+#footer {
+    position: absolute;
+    top: 93%;
+    left: 37%;
+}
