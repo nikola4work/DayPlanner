@@ -1,6 +1,5 @@
 // time and date display
-var dateTime = new Date();
-document.getElementById("dateTime").innerHTML = dateTime;
+$("#dateTime").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
 
 // document ready function
