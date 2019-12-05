@@ -3,10 +3,11 @@
         }
         
         body {
-            background-image: url("https://testdrive-archive.azurewebsites.net/Performance/Chalkboard/Images/EmptyChalkboard.svg");
+            background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
             background-size: cover;
             color: #ffffff;
             background-color: #000;
+            background-attachment: fixed;
         }
         
         .container {
@@ -45,8 +46,10 @@
             font-family: 'Shadows Into Light', cursive;
             font-size: 25px;
             border-radius: 10px;
-            background-color: #497959;
+            background-color: #4E7481;
             resize: none;
+            text-transform: capitalize;
+            text-align: center;
         }
         
         #input:hover {
