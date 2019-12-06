@@ -10,69 +10,7 @@
             background-attachment: fixed;
         }
         
-        .container {
+        .container-fluid {
             text-align: center;
-        }
-        
-        h5 {
-            margin: 30px;
-            font-family: 'Indie Flower', cursive;
-            font-size: 35px;
-        }
-        
-        h1 {
-            margin-bottom: 60px;
-            font-family: 'Indie Flower', cursive;
-            font-family: 'Shadows Into Light', cursive;
-            font-family: 'Righteous', cursive;
-            font-family: 'Permanent Marker', cursive;
-        }
-        
-        #time {
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            padding: 10px;
-            font-family: 'Indie Flower', cursive;
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 30px;
-            border-radius: 10px;
-        }
-        
-        #input {
-            width: 100%;
-            width: 100%;
-            border: 1px solid black;
-            font-family: 'Indie Flower', cursive;
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 25px;
-            border-radius: 10px;
-            background-color: #4E7481;
-            resize: none;
-            text-transform: capitalize;
-            text-align: center;
-        }
-        
-        #input:hover {
-            cursor: pointer;
-            background-color: #FF9F8C;
-        }
-        
-        #save:hover {
-            background-color: #FFDEEB;
-            cursor: pointer;
-        }
-        
-        #save {
-            border-bottom: 1px solid black;
-            border-top: 1px solid black;
-            padding: 10px;
-            border-radius: 10px;
-        }
-        
-        #footer {
-            font-family: 'Indie Flower', cursive;
-            font-family: 'Shadows Into Light', cursive;
-            font-family: 'Righteous', cursive;
-            font-family: 'Permanent Marker', cursive;
-            font-size: 20px;
+            margin-top: 30px;
         }

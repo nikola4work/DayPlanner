@@ -1,168 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--jQuery-->
-    <script src="./assets/js/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!--style.css-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!--font awesome-->
-    <script src="https://kit.fontawesome.com/f9e8e0bf75.js" crossorigin="anonymous"></script>
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!--Google fonts-->
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Day Planner</title>
 </head>
 
 <body>
-
-    <!--main container-->
-    <div class="container" id="container">
-
-        <h1>Day Planner</h1>
-
-        <h5 id="dateTime"></h5>
-
-        <!--main wrapper-->
-        <div class="row">
-            <div class="col" id="time">
-                9:00 AM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                10:00 AM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                11:00 AM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                12:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                1:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                2:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                3:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                4:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col" id="time">
-                5:00 PM
-            </div>
-            <div class="col-6">
-                <textarea id="input"></textarea>
-            </div>
-            <div class="col" id="save">
-                <i class="fas fa-share-square fa-3x"></i>
-            </div>
-
-        </div>
-
-        <!--end of main wrapper-->
-
-        <p id="footer">&copy; Nikola Jovanovic HW 5 DayPlanner</p>
-
-        <!--end of main container-->
+    <header class="container-fluid">
+        <h1 class="display-3">Day Planner</h1>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
     </div>
-
-
-
-    <!--js-->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--Moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--JS-->
     <script src="./assets/js/main.js"></script>
-    <!--jQ-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
