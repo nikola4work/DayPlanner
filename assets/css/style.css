@@ -241,7 +241,6 @@
                         margin-top: 10px;
                     }
                 }
-                /* niko's phone size*/
                 
                 @media screen and (max-width:426px) {
                     .display-3 {
@@ -266,6 +265,34 @@
                     }
                     .hour {
                         margin-left: -90px;
+                        margin-top: 10px;
+                    }
+                }
+                
+                @media screen and (max-width:328px) {
+                    .display-3 {
+                        font-size: 40px;
+                        margin-bottom: 40px;
+                    }
+                    .container {
+                        margin-left: 20px;
+                    }
+                    .col-sm-3 {
+                        width: 40px;
+                    }
+                    .col-sm-6 {
+                        width: 200px;
+                    }
+                    .btn {
+                        display: none;
+                    }
+                    .fas {
+                        margin-left: -190px;
+                        margin-top: 10px;
+                        animation: none;
+                    }
+                    .hour {
+                        margin-left: -100px;
                         margin-top: 10px;
                     }
                 }
