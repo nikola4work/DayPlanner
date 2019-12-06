@@ -241,3 +241,31 @@
                         margin-top: 10px;
                     }
                 }
+                /* niko's phone size*/
+                
+                @media screen and (max-width:426px) {
+                    .display-3 {
+                        font-size: 50px;
+                    }
+                    .container {
+                        margin-left: 50px;
+                    }
+                    .col-sm-3 {
+                        width: 50px;
+                    }
+                    .col-sm-6 {
+                        width: 220px;
+                    }
+                    .btn {
+                        position: relative;
+                        top: 105px;
+                    }
+                    .fas {
+                        margin-left: -180px;
+                        margin-top: 10px;
+                    }
+                    .hour {
+                        margin-left: -90px;
+                        margin-top: 10px;
+                    }
+                }
