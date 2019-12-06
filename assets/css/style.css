@@ -1,16 +1,16 @@
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
-            background-size: cover;
-            color: #ffffff;
-            background-color: #000;
-            background-attachment: fixed;
-        }
-        
-        .container-fluid {
-            text-align: center;
-            margin-top: 30px;
-        }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
+    background-size: cover;
+    color: #ffffff;
+    background-color: #000;
+    background-attachment: fixed;
+}
+
+.container-fluid {
+    margin-top: 30px;
+    text-align: center;
+}
