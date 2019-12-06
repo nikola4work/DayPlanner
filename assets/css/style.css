@@ -1,109 +1,113 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
-    background-size: cover;
-    color: #ffffff;
-    background-color: #000;
-    background-attachment: fixed;
-}
-
-.container-fluid {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.container {
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.display-3 {
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Permanent Marker', cursive;
-    font-family: 'Courgette', cursive;
-}
-
-.display-3 {
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 3s steps(5, start) infinite;
-}
-
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-@-webkit-keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-.lead {
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Shadows Into Light', cursive;
-    font-family: 'Permanent Marker', cursive;
-    font-family: 'Courgette', cursive;
-}
-
-textarea {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    text-transform: capitalize;
-    background: transparent;
-    resize: none;
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Indie Flower', cursive;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-textarea:hover {
-    cursor: pointer;
-    background-color: #496E7E
-}
-
-.saveBtn:hover {
-    cursor: pointer;
-    background-color: -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-
-.saveBtn {
-    position: relative;
-    left: 100px;
-    top: 20px;
-    background: none;
-    border: none;
-}
-
-.hour {
-    position: absolute;
-    left: 100px;
-    top: 30px;
-    font-size: 20px;
-}
-
-.col-sm-3 {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-radius: 10px;
-}
-
-.fas {
-    color: #ffffff;
-}
-
-hr {
-    background-color: #ffffff;
-}
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
+            background-size: cover;
+            color: #ffffff;
+            background-color: #000;
+            background-attachment: fixed;
+        }
+        
+        .container-fluid {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .display-3 {
+            font-size: 100px;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-family: 'Courgette', cursive;
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 3s steps(5, start) infinite;
+            text-shadow: 3px 5px 2px #474747, 40px 16px 1px #BCB8CE;
+        }
+        
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        
+        .lead {
+            font-size: 30px;
+            margin-top: 35px;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-family: 'Courgette', cursive;
+        }
+        
+        textarea {
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            background: transparent;
+            resize: none;
+            color: #ffffff;
+            font-size: 30px;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Shadows Into Light', cursive;
+        }
+        
+        textarea:hover {
+            cursor: pointer;
+            background-color: #496E7E
+        }
+        
+        .saveBtn:hover {
+            cursor: pointer;
+            background-color: -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        
+        .saveBtn {
+            position: relative;
+            left: 100px;
+            top: 20px;
+            background: none;
+            border: none;
+        }
+        
+        .hour {
+            position: absolute;
+            left: 100px;
+            top: 30px;
+            font-size: 20px;
+        }
+        
+        .col-sm-3 {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius: 10px;
+        }
+        
+        .fas {
+            color: #ffffff;
+        }
+        
+        .btn {
+            background-color: #577985;
+            position: relative;
+            top: 80px;
+            left: 180px;
+        }
