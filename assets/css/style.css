@@ -20,6 +20,37 @@ body {
     padding: 20px;
 }
 
+.display-3 {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Courgette', cursive;
+}
+
+.display-3 {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 3s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.lead {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Courgette', cursive;
+}
+
 textarea {
     border: 1px solid black;
     border-radius: 10px;
@@ -31,7 +62,9 @@ textarea {
     background: transparent;
     resize: none;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 textarea:hover {
@@ -65,4 +98,12 @@ textarea:hover {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-radius: 10px;
+}
+
+.fas {
+    color: #ffffff;
+}
+
+hr {
+    background-color: #ffffff;
 }
