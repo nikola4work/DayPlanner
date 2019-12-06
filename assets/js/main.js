@@ -33,8 +33,23 @@ $(document).ready(function() {
             row.append(coluser);
             row.append(fontawesome);
 
+            // adding rows to html container
+            $(".container").append(row);
+
+            getLocalStorage(i);
 
         }
         //FOR LOOP ENDS
+
+        function formatAMPM(hours) {
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            return hours + ampm;
+        }
+        formatAMPM();
+
+
+
     })
     // END OF DOCUMENT READY
