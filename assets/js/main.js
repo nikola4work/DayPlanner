@@ -17,6 +17,10 @@ $(document).ready(function() {
 
             //create a row
             var row = $(`<div data-time=${i} id='${i}' class="row">`);
+
+            //create a column for time
+            var coltime = $('<div class="col-sm-2"> <p class="hour">' + formatAMPM(i) + '</p>');
+
         }
     })
     // End of document ready brackets
