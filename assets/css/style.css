@@ -1,106 +1,106 @@
-            * {
-                box-sizing: border-box;
-            }
-            
-            body {
-                background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
-                background-size: cover;
-                color: #ffffff;
-                background-attachment: fixed;
-                background-color: #232323;
-            }
-            
-            .container-fluid {
-                margin-top: 30px;
-                text-align: center;
-                display: none;
-            }
-            
-            .container {
-                display: none;
-            }
-            
-            .display-3 {
-                margin-top: -20px;
-                font-size: 100px;
-                font-family: 'Indie Flower', cursive;
-                font-family: 'Shadows Into Light', cursive;
-                font-family: 'Permanent Marker', cursive;
-                font-family: 'Courgette', cursive;
-                color: #fff;
-                font-size: 92px;
-                text-transform: uppercase;
-                font-weight: 700;
-                background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
-                background-size: auto auto;
-                background-clip: border-box;
-                background-size: 200% auto;
-                background-clip: text;
-                text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                animation: textclip 1.5s linear infinite;
-            }
-            
-            @keyframes textclip {
-                to {
-                    background-position: 200% center;
+                * {
+                    box-sizing: border-box;
                 }
-            }
-            
-            .lead {
-                font-size: 30px;
-                margin-top: -30px;
-                font-family: 'Indie Flower', cursive;
-                font-family: 'Shadows Into Light', cursive;
-                font-family: 'Permanent Marker', cursive;
-                font-family: 'Courgette', cursive;
-                display: none;
-            }
-            
-            textarea {
-                border: 1px solid black;
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                padding: 10px;
-                text-align: center;
-                text-transform: capitalize;
-                background: transparent;
-                resize: none;
-                color: #ffffff;
-                font-size: 30px;
-                font-family: 'Indie Flower', cursive;
-                font-family: 'Shadows Into Light', cursive;
-            }
-            
-            textarea:hover {
-                cursor: pointer;
-                background-color: #496E7E
-            }
-            
-            .saveBtn:hover {
-                cursor: pointer;
-                background-color: -ms-transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-            }
-            
-            .saveBtn {
-                position: relative;
-                left: 100px;
-                top: 20px;
-                background: none;
-                border: none;
-            }
-            
-            .hour {
-                position: absolute;
-                left: 100px;
-                top: 30px;
-                font-size: 20px;
-            }
-            /*.past {
+                
+                body {
+                    background-image: url("../images/board-chalk-chalk-board-chalkboard-625219.jpg");
+                    background-size: cover;
+                    color: #ffffff;
+                    background-attachment: fixed;
+                    background-color: #232323;
+                }
+                
+                .container-fluid {
+                    margin-top: 30px;
+                    text-align: center;
+                    display: none;
+                }
+                
+                .container {
+                    display: none;
+                }
+                
+                .display-3 {
+                    margin-top: -20px;
+                    font-size: 100px;
+                    font-family: 'Indie Flower', cursive;
+                    font-family: 'Shadows Into Light', cursive;
+                    font-family: 'Permanent Marker', cursive;
+                    font-family: 'Courgette', cursive;
+                    color: #fff;
+                    font-size: 92px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
+                    background-size: auto auto;
+                    background-clip: border-box;
+                    background-size: 200% auto;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: textclip 1.5s linear infinite;
+                }
+                
+                @keyframes textclip {
+                    to {
+                        background-position: 200% center;
+                    }
+                }
+                
+                .lead {
+                    font-size: 30px;
+                    margin-top: -30px;
+                    font-family: 'Indie Flower', cursive;
+                    font-family: 'Shadows Into Light', cursive;
+                    font-family: 'Permanent Marker', cursive;
+                    font-family: 'Courgette', cursive;
+                    display: none;
+                }
+                
+                textarea {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    background: transparent;
+                    resize: none;
+                    color: #ffffff;
+                    font-size: 30px;
+                    font-family: 'Indie Flower', cursive;
+                    font-family: 'Shadows Into Light', cursive;
+                }
+                
+                textarea:hover {
+                    cursor: pointer;
+                    background-color: #496E7E
+                }
+                
+                .saveBtn:hover {
+                    cursor: pointer;
+                    background-color: -ms-transform: scale(1.5);
+                    -webkit-transform: scale(1.5);
+                    transform: scale(1.5);
+                }
+                
+                .saveBtn {
+                    position: relative;
+                    left: 100px;
+                    top: 20px;
+                    background: none;
+                    border: none;
+                }
+                
+                .hour {
+                    position: absolute;
+                    left: 100px;
+                    top: 30px;
+                    font-size: 20px;
+                }
+                /*.past {
             background-color: #d3d3d3;
             color: white;
         }
@@ -115,47 +115,129 @@
             color: white;
         }
         */
-            
-            .col-sm-3 {
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-                border-radius: 10px;
-            }
-            
-            .fas {
-                color: #ffffff;
-            }
-            
-            .btn {
-                background-color: #577985;
-                position: relative;
-                bottom: 85px;
-                left: 350px;
-                -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
-                box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
-            }
-            
-            .img:hover {
-                cursor: pointer;
-            }
-            
-            .img {
-                margin: 10px;
-            }
-            
-            .motivation {
-                font-family: 'Permanent Marker', cursive;
-                text-align: center;
-                margin-top: 100px;
-            }
-            
-            .arrow {
-                animation: blinker 1s linear infinite;
-                color: #496E7E
-            }
-            
-            @keyframes blinker {
-                50% {
-                    opacity: 0;
+                
+                .col-sm-3 {
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    border-radius: 10px;
                 }
-            }
+                
+                .fas {
+                    color: #ffffff;
+                }
+                
+                .btn {
+                    background-color: #577985;
+                    position: relative;
+                    bottom: 85px;
+                    left: 350px;
+                    -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
+                    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
+                }
+                
+                .img:hover {
+                    cursor: pointer;
+                }
+                
+                .img {
+                    margin: 10px;
+                }
+                
+                .motivation {
+                    font-family: 'Permanent Marker', cursive;
+                    text-align: center;
+                    margin-top: 100px;
+                }
+                
+                .arrow {
+                    animation: blinker 1s linear infinite;
+                    color: #496E7E
+                }
+                
+                @keyframes blinker {
+                    50% {
+                        opacity: 0;
+                    }
+                }
+                /* MEDIA QUERIES */
+                
+                @media screen and (max-width:764px) {
+                    .fas {
+                        margin-left: -90px;
+                        margin-top: 10px;
+                    }
+                    .hour {
+                        margin-left: -55px;
+                        margin-top: 10px;
+                    }
+                    .btn {
+                        margin-left: -50px;
+                    }
+                }
+                
+                @media screen and (max-width:764px) {
+                    .btn {
+                        margin-left: -220px;
+                    }
+                }
+                
+                @media screen and (max-width:575px) {
+                    .col-sm-3 {
+                        width: 100px;
+                    }
+                    .col-sm-6 {
+                        width: 340px;
+                    }
+                    .btn {
+                        margin-left: -220px;
+                    }
+                    .fas {
+                        margin-left: -140px;
+                        margin-top: 10px;
+                    }
+                    .hour {
+                        margin-left: -65px;
+                        margin-top: 10px;
+                    }
+                }
+                
+                @media screen and (max-width:553px) {
+                    .col-sm-3 {
+                        width: 90px;
+                    }
+                    .col-sm-6 {
+                        width: 320px;
+                    }
+                    .btn {
+                        margin-left: -220px;
+                    }
+                    .fas {
+                        margin-left: -150px;
+                        margin-top: 10px;
+                    }
+                    .hour {
+                        margin-left: -75px;
+                        margin-top: 10px;
+                    }
+                }
+                
+                @media screen and (max-width:460px) {
+                    .col-sm-3 {
+                        width: 70px;
+                    }
+                    .col-sm-6 {
+                        width: 270px;
+                    }
+                    .btn {
+                        margin-left: -350px;
+                        margin-top: -200px;
+                    }
+                    .fas {
+                        margin-left: -160px;
+                        margin-top: 10px;
+                    }
+                    .hour {
+                        margin-left: -80px;
+                        margin-top: 10px;
+                    }
+                }
