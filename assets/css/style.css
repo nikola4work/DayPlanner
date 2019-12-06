@@ -15,6 +15,11 @@ body {
     text-align: center;
 }
 
+.container {
+    margin-top: 40px;
+    padding: 20px;
+}
+
 textarea {
     border: 1px solid black;
     border-radius: 10px;
@@ -24,4 +29,40 @@ textarea {
     text-align: center;
     text-transform: capitalize;
     background: transparent;
+    resize: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+textarea:hover {
+    cursor: pointer;
+    background-color: #496E7E
+}
+
+.saveBtn:hover {
+    cursor: pointer;
+    background-color: -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.saveBtn {
+    position: relative;
+    left: 100px;
+    top: 20px;
+    background: none;
+    border: none;
+}
+
+.hour {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    font-size: 20px;
+}
+
+.col-sm-3 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
 }

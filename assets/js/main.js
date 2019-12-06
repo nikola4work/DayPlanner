@@ -19,12 +19,15 @@ $(document).ready(function() {
         var col2 = $(`<div class="col-sm-6"><textarea id=text${i} class="description"></textarea>`);
 
         //create column 3
-        var col3 = $(`<div class="col-sm-3"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`)
+        var col3 = $(`<div class="col-sm-3"><button class="saveBtn" id=${i}><i class="fas fa-save fa-3x"></i></button>`);
+
+
 
         // append col to row
         row.append(col1);
         row.append(col2);
         row.append(col3);
+
 
         //  add rows to container
         $(".container").append(row);
