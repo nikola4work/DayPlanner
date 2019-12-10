@@ -1,455 +1,457 @@
-                * {
-                    box-sizing: border-box;
-                }
-                
-                body {
-                    background-image: url("../images/Free-Chalkboard-Backgrounds-Download-620x388.jpg");
-                    background-size: cover;
-                    color: #ffffff;
-                    background-attachment: fixed;
-                }
-                
-                .container-fluid {
-                    margin-top: 30px;
-                    text-align: center;
-                    display: none;
-                }
-                
-                .container {
-                    display: none;
-                }
-                /* button on and off */
-                
-                .mid {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 1em;
-                    margin-top: 12px;
-                }
-                /* Switch starts here */
-                
-                .rocker {
-                    display: inline-block;
-                    position: relative;
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #888;
-                    width: 7em;
-                    height: 4em;
-                    overflow: hidden;
-                    border-bottom: 0.5em solid #eee;
-                }
-                
-                .rocker::before {
-                    content: "";
-                    position: absolute;
-                    top: 0.5em;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background-color: #999;
-                    border: 0.5em solid #eee;
-                    border-bottom: 0;
-                }
-                
-                .rocker input {
-                    opacity: 0;
-                    width: 0;
-                    height: 0;
-                }
-                
-                .switch-left,
-                .switch-right {
-                    cursor: pointer;
-                    position: absolute;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 2.5em;
-                    width: 3em;
-                    transition: 0.2s;
-                }
-                
-                .switch-left {
-                    height: 2.4em;
-                    width: 2.75em;
-                    left: 0.85em;
-                    bottom: 0.4em;
-                    background-color: #ddd;
-                    transform: rotate(15deg) skewX(15deg);
-                }
-                
-                .switch-right {
-                    right: 0.5em;
-                    bottom: 0;
-                    background-color: blue;
-                    color: #fff;
-                }
-                
-                .switch-left::before,
-                .switch-right::before {
-                    content: "";
-                    position: absolute;
-                    width: 0.4em;
-                    height: 2.45em;
-                    bottom: -0.45em;
-                    background-color: #ccc;
-                    transform: skewY(-65deg);
-                }
-                
-                .switch-left::before {
-                    left: -0.4em;
-                }
-                
-                .switch-right::before {
-                    right: -0.375em;
-                    background-color: transparent;
-                    transform: skewY(65deg);
-                }
-                
-                input:checked+.switch-left {
-                    background-color: red;
-                    color: #fff;
-                    bottom: 0px;
-                    left: 0.5em;
-                    height: 2.5em;
-                    width: 3em;
-                    transform: rotate(0deg) skewX(0deg);
-                }
-                
-                input:checked+.switch-left::before {
-                    background-color: transparent;
-                    width: 3.0833em;
-                }
-                
-                input:checked+.switch-left+.switch-right {
-                    background-color: #ddd;
-                    color: #888;
-                    bottom: 0.4em;
-                    right: 0.8em;
-                    height: 2.4em;
-                    width: 2.75em;
-                    transform: rotate(-15deg) skewX(-15deg);
-                }
-                
-                input:checked+.switch-left+.switch-right::before {
-                    background-color: #ccc;
-                }
-                /* Keyboard Users */
-                
-                input:focus+.switch-left {
-                    color: #333;
-                }
-                
-                input:checked:focus+.switch-left {
-                    color: #fff;
-                }
-                
-                input:focus+.switch-left+.switch-right {
-                    color: #fff;
-                }
-                
-                input:checked:focus+.switch-left+.switch-right {
-                    color: #333;
-                }
-                /* page title "DayPlaner */
-                
-                .display-3 {
-                    margin-top: -20px;
-                    font-size: 80px;
-                    font-family: 'Indie Flower', cursive;
-                    font-family: 'Shadows Into Light', cursive;
-                    font-family: 'Permanent Marker', cursive;
-                    font-family: 'Courgette', cursive;
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
-                    background-size: auto auto;
-                    background-clip: border-box;
-                    background-size: 200% auto;
-                    background-clip: text;
-                    text-fill-color: transparent;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    animation: textclip 1.5s linear infinite;
-                }
-                
-                @keyframes textclip {
-                    to {
-                        background-position: 200% center;
+                    * {
+                        box-sizing: border-box;
                     }
-                }
-                /* date display */
-                
-                .lead {
-                    font-size: 30px;
-                    margin-top: 30px;
-                    margin-bottom: 20px;
-                    font-family: 'Indie Flower', cursive;
-                    font-family: 'Shadows Into Light', cursive;
-                    font-family: 'Permanent Marker', cursive;
-                    font-family: 'Courgette', cursive;
-                    display: none;
-                }
-                /* user input area */
-                
-                textarea {
-                    border-top: 1px solid #ffffff;
-                    border-bottom: 1px solid #ffffff;
-                    border-radius: 10px;
-                    width: 100%;
-                    height: 100%;
-                    padding: 10px;
-                    text-align: center;
-                    text-transform: capitalize;
-                    background: transparent;
-                    background-color: #d3d3d3;
-                    resize: none;
-                    color: #ffffff;
-                    font-size: 30px;
-                    font-family: 'Indie Flower', cursive;
-                    font-family: 'Shadows Into Light', cursive;
-                }
-                
-                textarea:hover {
-                    cursor: pointer;
-                    background-color: #3C3A2E
-                }
-                /* save user input button */
-                
-                .saveBtn:hover {
-                    cursor: pointer;
-                    background-color: -ms-transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
-                }
-                
-                .saveBtn {
-                    position: relative;
-                    left: 100px;
-                    top: 20px;
-                    background: none;
-                    border: none;
-                }
-                /* colors for past,present, future */
-                
-                .hour {
-                    position: absolute;
-                    left: 100px;
-                    top: 30px;
-                    font-size: 20px;
-                }
-                
-                .past {
-                    background-color: #d3d3d3;
-                    color: white;
-                }
-                
-                .present {
-                    background-color: #ff6961;
-                    color: white;
-                }
-                
-                .future {
-                    background-color: #77dd77;
-                    color: white;
-                }
-                
-                .col-sm-3 {
-                    border-top: 1px solid #ffffff;
-                    border-bottom: 1px solid #ffffff;
-                    border-radius: 10px;
-                    font-size: 15px;
-                }
-                
-                .fas {
-                    color: #ffffff;
-                }
-                /* tooltop fot copyrights */
-                
-                .btn {
-                    background-color: #577985;
-                    position: relative;
-                    bottom: 77px;
-                    left: 350px;
-                    -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
-                    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
-                }
-                /* arrow img */
-                
-                img {
-                    position: relative;
-                    top: 100px;
-                    right: 95px;
-                }
-                
-                .arrow {
-                    animation: blinker 1s linear infinite;
-                }
-                /* motivational quote when page opens */
-                
-                .motivation {
-                    font-family: 'Permanent Marker', cursive;
-                    text-align: center;
-                    margin-top: 120px;
-                }
-                
-                @keyframes blinker {
-                    50% {
-                        opacity: 0;
+                    
+                    body {
+                        background-image: url("../images/Free-Chalkboard-Backgrounds-Download-620x388.jpg");
+                        background-size: cover;
+                        color: #ffffff;
+                        background-attachment: fixed;
                     }
-                }
-                /* div for motivational quotes */
-                
-                #qDisplay {
-                    padding: 50px;
-                    margin-top: -50px;
-                    color: white;
-                    font-size: 30px;
-                    font-family: 'Indie Flower', cursive;
-                    font-family: 'Shadows Into Light', cursive;
-                    font-family: 'Permanent Marker', cursive;
-                    font-family: 'Courgette', cursive;
-                    display: none;
-                }
-                /* MEDIA QUERIES */
-                
-                @media screen and (max-width:764px) {
-                    .fas {
-                        margin-left: -90px;
-                        margin-top: 10px;
-                    }
-                    .hour {
-                        margin-left: -55px;
-                        margin-top: 10px;
-                    }
-                    .btn {
-                        margin-left: -50px;
-                    }
-                }
-                
-                @media screen and (max-width:764px) {
-                    .btn {
-                        margin-left: -220px;
-                    }
-                }
-                
-                @media screen and (max-width:575px) {
-                    .col-sm-3 {
-                        width: 100px;
-                    }
-                    .col-sm-6 {
-                        width: 340px;
-                    }
-                    .btn {
-                        margin-left: -220px;
-                    }
-                    .fas {
-                        margin-left: -140px;
-                        margin-top: 10px;
-                    }
-                    .hour {
-                        margin-left: -65px;
-                        margin-top: 10px;
-                    }
-                }
-                
-                @media screen and (max-width:553px) {
-                    .col-sm-3 {
-                        width: 90px;
-                    }
-                    .col-sm-6 {
-                        width: 320px;
-                    }
-                    .btn {
-                        margin-left: -220px;
-                    }
-                    .fas {
-                        margin-left: -150px;
-                        margin-top: 10px;
-                    }
-                    .hour {
-                        margin-left: -75px;
-                        margin-top: 10px;
-                    }
-                }
-                
-                @media screen and (max-width:460px) {
-                    .col-sm-3 {
-                        width: 70px;
-                    }
-                    .col-sm-6 {
-                        width: 270px;
-                    }
-                    .btn {
-                        margin-left: -350px;
-                        margin-top: -200px;
-                    }
-                    .fas {
-                        margin-left: -160px;
-                        margin-top: 10px;
-                    }
-                    .hour {
-                        margin-left: -80px;
-                        margin-top: 10px;
-                    }
-                }
-                
-                @media screen and (max-width:426px) {
-                    .display-3 {
-                        font-size: 50px;
-                    }
-                    .container {
-                        margin-left: 50px;
-                    }
-                    .col-sm-3 {
-                        width: 50px;
-                    }
-                    .col-sm-6 {
-                        width: 220px;
-                    }
-                    .btn {
-                        position: relative;
-                        top: 105px;
-                    }
-                    .fas {
-                        margin-left: -180px;
-                        margin-top: 10px;
-                    }
-                    .hour {
-                        margin-left: -90px;
-                        margin-top: 10px;
-                    }
-                }
-                
-                @media screen and (max-width:328px) {
-                    .display-3 {
-                        font-size: 40px;
-                        margin-bottom: 40px;
-                    }
-                    .container {
-                        margin-left: 20px;
-                    }
-                    .col-sm-3 {
-                        width: 40px;
-                    }
-                    .col-sm-6 {
-                        width: 200px;
-                    }
-                    .btn {
+                    
+                    .container-fluid {
+                        margin-top: 30px;
+                        text-align: center;
                         display: none;
                     }
-                    .fas {
-                        margin-left: -190px;
-                        margin-top: 10px;
-                        animation: none;
+                    
+                    .container {
+                        display: none;
                     }
+                    /* button on and off */
+                    
+                    .mid {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 1em;
+                        margin-top: 12px;
+                    }
+                    /* Switch starts here */
+                    
+                    .rocker {
+                        display: inline-block;
+                        position: relative;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #888;
+                        width: 7em;
+                        height: 4em;
+                        overflow: hidden;
+                        border-bottom: 0.5em solid #eee;
+                    }
+                    
+                    .rocker::before {
+                        content: "";
+                        position: absolute;
+                        top: 0.5em;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #999;
+                        border: 0.5em solid #eee;
+                        border-bottom: 0;
+                    }
+                    
+                    .rocker input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+                    
+                    .switch-left,
+                    .switch-right {
+                        cursor: pointer;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 2.5em;
+                        width: 3em;
+                        transition: 0.2s;
+                    }
+                    
+                    .switch-left {
+                        height: 2.4em;
+                        width: 2.75em;
+                        left: 0.85em;
+                        bottom: 0.4em;
+                        background-color: #ddd;
+                        transform: rotate(15deg) skewX(15deg);
+                    }
+                    
+                    .switch-right {
+                        right: 0.5em;
+                        bottom: 0;
+                        background-color: blue;
+                        color: #fff;
+                    }
+                    
+                    .switch-left::before,
+                    .switch-right::before {
+                        content: "";
+                        position: absolute;
+                        width: 0.4em;
+                        height: 2.45em;
+                        bottom: -0.45em;
+                        background-color: #ccc;
+                        transform: skewY(-65deg);
+                    }
+                    
+                    .switch-left::before {
+                        left: -0.4em;
+                    }
+                    
+                    .switch-right::before {
+                        right: -0.375em;
+                        background-color: transparent;
+                        transform: skewY(65deg);
+                    }
+                    
+                    input:checked+.switch-left {
+                        background-color: red;
+                        color: #fff;
+                        bottom: 0px;
+                        left: 0.5em;
+                        height: 2.5em;
+                        width: 3em;
+                        transform: rotate(0deg) skewX(0deg);
+                    }
+                    
+                    input:checked+.switch-left::before {
+                        background-color: transparent;
+                        width: 3.0833em;
+                    }
+                    
+                    input:checked+.switch-left+.switch-right {
+                        background-color: #ddd;
+                        color: #888;
+                        bottom: 0.4em;
+                        right: 0.8em;
+                        height: 2.4em;
+                        width: 2.75em;
+                        transform: rotate(-15deg) skewX(-15deg);
+                    }
+                    
+                    input:checked+.switch-left+.switch-right::before {
+                        background-color: #ccc;
+                    }
+                    /* Keyboard Users */
+                    
+                    input:focus+.switch-left {
+                        color: #333;
+                    }
+                    
+                    input:checked:focus+.switch-left {
+                        color: #fff;
+                    }
+                    
+                    input:focus+.switch-left+.switch-right {
+                        color: #fff;
+                    }
+                    
+                    input:checked:focus+.switch-left+.switch-right {
+                        color: #333;
+                    }
+                    /* page title "DayPlaner */
+                    
+                    .display-3 {
+                        margin-top: -20px;
+                        font-size: 80px;
+                        font-family: 'Indie Flower', cursive;
+                        font-family: 'Shadows Into Light', cursive;
+                        font-family: 'Permanent Marker', cursive;
+                        font-family: 'Courgette', cursive;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
+                        background-size: auto auto;
+                        background-clip: border-box;
+                        background-size: 200% auto;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: textclip 1.5s linear infinite;
+                    }
+                    
+                    @keyframes textclip {
+                        to {
+                            background-position: 200% center;
+                        }
+                    }
+                    /* date display */
+                    
+                    .lead {
+                        font-size: 30px;
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        font-family: 'Indie Flower', cursive;
+                        font-family: 'Shadows Into Light', cursive;
+                        font-family: 'Permanent Marker', cursive;
+                        font-family: 'Courgette', cursive;
+                        display: none;
+                    }
+                    /* user input area */
+                    
+                    textarea {
+                        border-top: 1px solid #ffffff;
+                        border-bottom: 1px solid #ffffff;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        background: transparent;
+                        background-color: #d3d3d3;
+                        resize: none;
+                        color: black;
+                        font-size: 35px;
+                        font-family: 'Indie Flower', cursive;
+                        font-family: 'Shadows Into Light', cursive;
+                        transition: transform .2s;
+                    }
+                    
+                    textarea:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                    /* save user input button */
+                    
+                    .saveBtn:hover {
+                        cursor: pointer;
+                        background-color: -ms-transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                    
+                    .saveBtn {
+                        position: relative;
+                        left: 100px;
+                        top: 20px;
+                        background: none;
+                        border: none;
+                        transition: transform .2s;
+                    }
+                    /* colors for past,present, future */
+                    
                     .hour {
-                        margin-left: -100px;
-                        margin-top: 10px;
+                        position: absolute;
+                        left: 100px;
+                        top: 30px;
+                        font-size: 20px;
                     }
-                }
+                    
+                    .past {
+                        background-color: #d3d3d3;
+                        color: white;
+                    }
+                    
+                    .present {
+                        background-color: #ff6961;
+                        color: white;
+                    }
+                    
+                    .future {
+                        background-color: #77dd77;
+                        color: white;
+                    }
+                    
+                    .col-sm-3 {
+                        border-top: 1px solid #ffffff;
+                        border-bottom: 1px solid #ffffff;
+                        border-radius: 10px;
+                        font-size: 15px;
+                    }
+                    
+                    .fas {
+                        color: #ffffff;
+                    }
+                    /* tooltop fot copyrights */
+                    
+                    .btn {
+                        background-color: #577985;
+                        position: relative;
+                        bottom: 77px;
+                        left: 350px;
+                        -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
+                        box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
+                    }
+                    /* arrow img */
+                    
+                    img {
+                        position: relative;
+                        top: 100px;
+                        right: 95px;
+                    }
+                    
+                    .arrow {
+                        animation: blinker 1s linear infinite;
+                    }
+                    /* motivational quote when page opens */
+                    
+                    .motivation {
+                        font-family: 'Permanent Marker', cursive;
+                        text-align: center;
+                        margin-top: 120px;
+                    }
+                    
+                    @keyframes blinker {
+                        50% {
+                            opacity: 0;
+                        }
+                    }
+                    /* div for motivational quotes */
+                    
+                    #qDisplay {
+                        padding: 50px;
+                        margin-top: -50px;
+                        color: white;
+                        font-size: 30px;
+                        font-family: 'Indie Flower', cursive;
+                        font-family: 'Shadows Into Light', cursive;
+                        font-family: 'Permanent Marker', cursive;
+                        font-family: 'Courgette', cursive;
+                        display: none;
+                    }
+                    /* MEDIA QUERIES */
+                    
+                    @media screen and (max-width:764px) {
+                        .fas {
+                            margin-left: -90px;
+                            margin-top: 10px;
+                        }
+                        .hour {
+                            margin-left: -55px;
+                            margin-top: 10px;
+                        }
+                        .btn {
+                            margin-left: -50px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:764px) {
+                        .btn {
+                            margin-left: -220px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:575px) {
+                        .col-sm-3 {
+                            width: 100px;
+                        }
+                        .col-sm-6 {
+                            width: 340px;
+                        }
+                        .btn {
+                            margin-left: -220px;
+                        }
+                        .fas {
+                            margin-left: -140px;
+                            margin-top: 10px;
+                        }
+                        .hour {
+                            margin-left: -65px;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:553px) {
+                        .col-sm-3 {
+                            width: 90px;
+                        }
+                        .col-sm-6 {
+                            width: 320px;
+                        }
+                        .btn {
+                            margin-left: -220px;
+                        }
+                        .fas {
+                            margin-left: -150px;
+                            margin-top: 10px;
+                        }
+                        .hour {
+                            margin-left: -75px;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:460px) {
+                        .col-sm-3 {
+                            width: 70px;
+                        }
+                        .col-sm-6 {
+                            width: 270px;
+                        }
+                        .btn {
+                            margin-left: -350px;
+                            margin-top: -200px;
+                        }
+                        .fas {
+                            margin-left: -160px;
+                            margin-top: 10px;
+                        }
+                        .hour {
+                            margin-left: -80px;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:426px) {
+                        .display-3 {
+                            font-size: 50px;
+                        }
+                        .container {
+                            margin-left: 50px;
+                        }
+                        .col-sm-3 {
+                            width: 50px;
+                        }
+                        .col-sm-6 {
+                            width: 220px;
+                        }
+                        .btn {
+                            position: relative;
+                            top: 105px;
+                        }
+                        .fas {
+                            margin-left: -180px;
+                            margin-top: 10px;
+                        }
+                        .hour {
+                            margin-left: -90px;
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:328px) {
+                        .display-3 {
+                            font-size: 40px;
+                            margin-bottom: 40px;
+                        }
+                        .container {
+                            margin-left: 20px;
+                        }
+                        .col-sm-3 {
+                            width: 40px;
+                        }
+                        .col-sm-6 {
+                            width: 200px;
+                        }
+                        .btn {
+                            display: none;
+                        }
+                        .fas {
+                            margin-left: -190px;
+                            margin-top: 10px;
+                            animation: none;
+                        }
+                        .hour {
+                            margin-left: -100px;
+                            margin-top: 10px;
+                        }
+                    }
