@@ -22,13 +22,12 @@
                 
                 .display-3 {
                     margin-top: -20px;
-                    font-size: 100px;
+                    font-size: 80px;
                     font-family: 'Indie Flower', cursive;
                     font-family: 'Shadows Into Light', cursive;
                     font-family: 'Permanent Marker', cursive;
                     font-family: 'Courgette', cursive;
                     color: #fff;
-                    font-size: 92px;
                     text-transform: uppercase;
                     font-weight: 700;
                     background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
@@ -130,7 +129,7 @@
                 .btn {
                     background-color: #577985;
                     position: relative;
-                    bottom: 85px;
+                    bottom: 77px;
                     left: 350px;
                     -webkit-box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
                     box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.39);
@@ -159,6 +158,23 @@
                     50% {
                         opacity: 0;
                     }
+                }
+                
+                #qDisplay {
+                    position: relative;
+                    left: 28%;
+                    width: 600px;
+                    margin-top: 50px;
+                    padding: 50px;
+                    margin-bottom: 50px;
+                    border: 1px solid #476D7B;
+                    color: white;
+                    font-size: 20px;
+                    font-family: 'Indie Flower', cursive;
+                    font-family: 'Shadows Into Light', cursive;
+                    font-family: 'Permanent Marker', cursive;
+                    font-family: 'Courgette', cursive;
+                    display: none;
                 }
                 /* MEDIA QUERIES */
                 

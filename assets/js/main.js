@@ -5,6 +5,10 @@ function getLocalStorage(key) {
     }
 }
 
+var q = ['“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney', '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill', '“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers', '“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi', '“We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou', ' “Creativity Is Intelligence Having Fun.” – Albert Einstein', '“Do What You Can With All You Have, Wherever You Are.” – Theodore Roosevelt', ' “You Are Never Too Old To Set Another Goal Or To Dream A New Dream.” – C.S. Lewis']
+
+
+
 // DOCUMENT READY
 $(document).ready(function() {
     //MOMENT.JS
@@ -18,6 +22,8 @@ $(document).ready(function() {
         $(".img").remove();
         $(".arrow").remove();
     });
+
+
 
     //FOR LOOP
     for (var i = 9; i < 18; i++) {
@@ -85,6 +91,19 @@ $(document).ready(function() {
             .children(".description")
             .val();
         localStorage.setItem(eventId, eventText);
+        $("#qDisplay").show();
+
     });
+
+
+
+    var save = $(".saveBtn");
+    saveBtn.on("click", function() {
+        var randomNumber = Math.floor(Math.random() * (q.length));
+        document.getElementById("qDisplay").innerText = q[randomNumber];
+
+
+    });
+
 });
 //END OF DOCUMENT READY
