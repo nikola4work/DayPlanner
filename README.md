@@ -18,7 +18,7 @@ User story - as a person with a busy schedule you want to add relevant events to
 * Motivational quote before a busy day ahead
 * The application displays time blocks for standard business hours (9 a.m. to 5 p.m.).
 * Each time block contains an input field and a save button.
-* Each box is color-coded and contains green, red, grey color based on time of the day.
+* Each box is color-coded and contains green( future ) red( current ) grey( past ) color based on time of the day.
 * When the user clicks the save button the events are saved in the time block for that hour.
 * Clicking a time blocks "Save" button stores the input text in local storage, and displays motivational quote.
 * The current day is displayed at the top of the calendar.
