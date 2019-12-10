@@ -5,27 +5,32 @@ function getLocalStorage(key) {
     }
 }
 
-var q = ['“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney', '“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill', '“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers', '“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi', '“We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou', ' “Creativity Is Intelligence Having Fun.” – Albert Einstein', '“Do What You Can With All You Have, Wherever You Are.” – Theodore Roosevelt', ' “You Are Never Too Old To Set Another Goal Or To Dream A New Dream.” – C.S. Lewis']
-
-
+var q = [
+    "“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney",
+    "“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.” – Winston Churchill",
+    "“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers",
+    "“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi",
+    "“We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou",
+    " “Creativity Is Intelligence Having Fun.” – Albert Einstein",
+    "“Do What You Can With All You Have, Wherever You Are.” – Theodore Roosevelt",
+    " “You Are Never Too Old To Set Another Goal Or To Dream A New Dream.” – C.S. Lewis"
+];
 
 // DOCUMENT READY
 $(document).ready(function() {
     //MOMENT.JS
     $("#currentDay").text(moment().format("dddd, MMMM Do"));
     // HIDDEN CONTENT
-    $(".img").click(function() {
+    $(".switch-right").click(function() {
         $(".container").show(1000);
         $(".lead").toggle("medium");
         $(".container-fluid").toggle("medium");
         $(".motivation").remove();
-        $(".img").remove();
+        $(".mid").remove();
         $(".arrow").remove();
     });
 
-
-
-    //FOR LOOP
+    //FOR LOOP - creating rows and columns
     for (var i = 9; i < 18; i++) {
         // create a row
         var row = $(`<div data-time=${i} id='${i}' class="row">`);
@@ -92,18 +97,15 @@ $(document).ready(function() {
             .val();
         localStorage.setItem(eventId, eventText);
         $("#qDisplay").show();
-
+        $(".display-3").hide();
+        $(".btn").hide();
     });
 
-
-
+    // generate random motivational quotes
     var save = $(".saveBtn");
     saveBtn.on("click", function() {
-        var randomNumber = Math.floor(Math.random() * (q.length));
+        var randomNumber = Math.floor(Math.random() * q.length);
         document.getElementById("qDisplay").innerText = q[randomNumber];
-
-
     });
-
 });
 //END OF DOCUMENT READY
