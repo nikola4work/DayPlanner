@@ -6,8 +6,6 @@
 
 ## Description
 
-##### Third-Party APIs Homework
-
 User story - as a person with a busy schedule you want to add relevant events to a daily planner so you can manage your time effectively
 
 
