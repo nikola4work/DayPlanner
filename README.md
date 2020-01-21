@@ -24,14 +24,9 @@ User story - as a person with a busy schedule you want to add relevant events to
 
 
 
-## Screenshots
+## Live Preview
 
-
-<img src="https://github.com/nikola4work/DayPlanner/blob/master/assets/images/readme%201.png" height="250" width="450">
-
-<img src="https://github.com/nikola4work/DayPlanner/blob/master/assets/images/readme%202.png" height="250" width="450">
-
-<img src="https://github.com/nikola4work/DayPlanner/blob/master/assets/images/readme%203.png" height="250" width="450">
+<img src="https://github.com/nikola4work/DayPlanner/blob/master/gif.gif">
 
 
 
@@ -40,7 +35,7 @@ User story - as a person with a busy schedule you want to add relevant events to
 ## Setup/Installation Requirements
 
 * Clone this repository to your local machine if you wish to edit
-* For live preview navigate to the https://nikola4work.github.io/DayPlanner/
+* Direct link to site https://nikola4work.github.io/DayPlanner/
 
 
 
